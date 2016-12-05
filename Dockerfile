@@ -8,8 +8,7 @@ WORKDIR /opt/app
 
 RUN git clone git://github.com/DemocracyOS/democracyos /opt/app && \
       npm install --quiet && \
-      make build && \
-      node bin/dos-ssl
+      make build
 
 EXPOSE 3000
 
